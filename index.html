@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hanfei Cui</title>
+<meta name="description" content="Hanfei Cui, PhD candidate in particle physics on the ATLAS experiment at CERN.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%9B%EF%B8%8F</text></svg>">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #37352f;
+    --text-dim: #686763;
+    --border: #ebebea;
+    --chip-bg: #f1f1ef;
+    --accent: #37352f;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--text-dim); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--text); }
+
+  .cover {
+    width: 100%;
+    height: 30vh;
+    min-height: 180px;
+    max-height: 320px;
+    overflow: hidden;
+    background: var(--chip-bg);
+  }
+  .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+  }
+
+  header.site-header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  header.site-header h1 {
+    font-size: 2.4rem;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  header.site-header p.tagline {
+    color: var(--text-dim);
+    margin: 0 0 0.9rem;
+    font-size: 1.05rem;
+  }
+  .contact-line {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+  }
+  .contact-line span.sep { margin: 0 0.5em; }
+
+  section {
+    margin-bottom: 2.6rem;
+  }
+  section h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  p { margin: 0 0 0.8rem; }
+  .bar { text-decoration: overline; text-decoration-thickness: 1px; }
+
+  .project {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .project:first-child { border-top: none; padding-top: 0; }
+  .project h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.02rem;
+  }
+  .project .meta {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    margin-bottom: 0.6rem;
+  }
+  .project p {
+    font-size: 0.96rem;
+  }
+  .project .tags {
+    margin-top: 0.7rem;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--chip-bg);
+    color: var(--text-dim);
+    border-radius: 4px;
+    padding: 0.15rem 0.55rem;
+    margin: 0 0.35rem 0.35rem 0;
+    font-size: 0.78rem;
+  }
+
+  .entry {
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    gap: 0.1rem 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+  .entry .when {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    padding-top: 0.15rem;
+  }
+  .entry .what strong { font-size: 0.98rem; }
+  .entry .what .org { color: var(--text-dim); }
+  .entry .what .honours {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+  }
+  .entry .what ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+  }
+  .entry .what ul li { margin-bottom: 0.2rem; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    gap: 0.5rem 1.2rem;
+  }
+  .skills-grid dt {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+  }
+  .skills-grid dd {
+    margin: 0;
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 560px) {
+    .entry, .skills-grid { grid-template-columns: 1fr; }
+    .entry .when { padding-top: 0; margin-bottom: 0.1rem; }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191919;
+      --text: #e9e9e7;
+      --text-dim: #9b9b9b;
+      --border: #2f2f2f;
+      --chip-bg: #2a2a2a;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="cover">
+    <img src="assets/atlas.jpg" alt="ATLAS detector" loading="eager">
+  </div>
+
+  <div class="wrap">
+
+    <header class="site-header">
+      <h1>Hanfei Cui</h1>
+      <p class="tagline">PhD candidate in particle physics, ATLAS experiment at CERN</p>
+      <div class="contact-line">
+        <a href="mailto:hanfei.cui.16@ucl.ac.uk">hanfei.cui.16@ucl.ac.uk</a>
+        <span class="sep">&middot;</span>
+        University College London
+        <span class="sep">&middot;</span>
+        CERN
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>PhD candidate in particle physics at University College London, working on the ATLAS
+      experiment at the Large Hadron Collider. Research spans trigger algorithm development for
+      forward proton detection and precision measurements of jet substructure in top-quark pair
+      events. Background in graph-based machine learning and, before that, industrial X-ray
+      imaging.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Physics projects</h2>
+
+      <div class="project">
+        <h3>ATLAS Forward Proton &Delta;z Trigger Algorithm</h3>
+        <div class="meta">ATLAS Experiment &middot; CERN &middot; 2022&ndash;2026 &middot; merged into Athena and validated end to end</div>
+        <p>Developed an online trigger selection for the ATLAS Forward Proton (AFP) detector. It
+        compares the longitudinal vertex position measured by the AFP time-of-flight detectors with
+        the one reconstructed by the inner detector, and rejects forward protons that came from a
+        different interaction than the central event. Its two working points, 5&nbsp;mm and
+        10&nbsp;mm, reject uncorrelated proton&ndash;vertex combinations by factors of about ten
+        and five.</p>
+        <p>Contribution: design and implementation of the HLT hypothesis algorithm and tool, their
+        monitoring, migration of the AFP chains to the component-accumulator configuration, and
+        end-to-end validation in two Athena releases. The selection was not enabled for Run&nbsp;3
+        data taking.</p>
+        <div class="tags">
+          <span class="tag">forward physics</span>
+          <span class="tag">trigger / HLT</span>
+          <span class="tag">Athena</span>
+          <span class="tag">C++</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Flavour-Resolved Lund Jet Plane in <em>t<span class="bar">t</span></em> Events</h3>
+        <div class="meta">ATLAS Experiment &middot; CERN &middot; full Run 2 dataset, 140&nbsp;fb&#8315;&sup1; at &radic;s&nbsp;=&nbsp;13&nbsp;TeV</div>
+        <p>A measurement of the Lund jet plane resolved by jet flavour (<em>b</em>-, <em>c</em>- and
+        light-jets), the first of its kind at ATLAS. GN2v01 track-origin labelling separates
+        heavy-flavour decay products from QCD radiation, and the ratios of heavy-flavour to
+        light-jet planes are built to isolate the dead-cone effect: the suppression of collinear
+        radiation around heavy quarks.</p>
+        <p>Covers <em>R</em>&nbsp;=&nbsp;0.4 jets with 20&nbsp;&lt;&nbsp;p<sub>T</sub>&nbsp;&lt;&nbsp;200&nbsp;GeV,
+        a range below the two existing ATLAS Lund-jet-plane measurements, as a test of
+        parton-shower and hadronization models in the heavy-flavour sector. Results will appear
+        in my thesis and an ATLAS paper.</p>
+        <p>Contribution: derivation development, track-origin labelling and flavour tagging, and
+        the unfolding setup (OmniFold-based, iterative, with closure tests).</p>
+        <div class="tags">
+          <span class="tag">jet substructure</span>
+          <span class="tag">dead-cone effect</span>
+          <span class="tag">unfolding</span>
+          <span class="tag">flavour tagging</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Talks</h2>
+
+      <div class="entry">
+        <div class="when">2026</div>
+        <div class="what">
+          <strong>QCD jet measurements in ATLAS</strong><br>
+          <span class="org">QCD@LHC 2026, University of Oxford &middot; on behalf of the ATLAS Collaboration</span>
+          <ul>
+            <li>Review of three recent ATLAS papers that use jets to test QCD &middot; <a href="https://cds.cern.ch/record/2970434">link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2026</div>
+        <div class="what">
+          <strong>Machine Learning-based Unfolding</strong><br>
+          <span class="org">ATLAS UK Unfolding and EFT Meeting, Cambridge</span>
+          <ul>
+            <li><a href="https://indico.cern.ch/event/1663480/contributions/7017633/">link</a> (ATLAS members only)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2025</div>
+        <div class="what">
+          <strong>Jet&amp;Photon: Zbb + dead cone analyses</strong><br>
+          <span class="org">ATLAS Standard Model Workshop 2025, USTC, Hefei</span>
+          <ul>
+            <li><a href="https://indico.cern.ch/event/1538574/contributions/6679215/">link</a> (ATLAS members only)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2025</div>
+        <div class="what">
+          <strong>Probing the Dead Cone Effect in <em>b</em>-Jet Substructure Using the Lund Jet Plane
+          and Graph Neural Network Track Origin Tagging in <em>t<span class="bar">t</span></em>
+          Events with the ATLAS Detector</strong><br>
+          <span class="org">IOP Joint APP and HEPP Annual Conference 2025, University of Cambridge &middot; parallel talk</span>
+          <ul>
+            <li><a href="https://indico.global/event/5646/contributions/122155/">link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2024</div>
+        <div class="what">
+          <strong>Minimum Bias and Forward Detector Triggers</strong><br>
+          <span class="org">ATLAS TDAQ Week &middot; on behalf of the MinBias/FWD Trigger Signature Group</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2020</div>
+        <div class="what">
+          <strong>Graph Neural Networks for Particle Identification</strong><br>
+          <span class="org">DUNE FD Sim/Reco Workshop</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+
+      <div class="entry">
+        <div class="when">2023&ndash;2026</div>
+        <div class="what">
+          <strong>Postgraduate Teaching Assistant</strong><br>
+          <span class="org">Department of Physics &amp; Astronomy, University College London</span>
+          <ul>
+            <li>Third-year undergraduate laboratory, three academic years &middot; <a href="https://www.ucl.ac.uk/mathematical-physical-sciences/laboratory-skills-year-three">link</a></li>
+            <li>Tutored students through the muon lifetime experiment</li>
+            <li>Marked lab reports and examined students in mini-vivas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="when">2022&ndash;2026</div>
+        <div class="what">
+          <strong>PhD, Particle Physics</strong><br>
+          <span class="org">University College London</span>
+          <ul>
+            <li>ATLAS Forward Proton time-of-flight detector trigger algorithm</li>
+            <li>ATLAS jet substructure: dead-cone effect via the flavour-resolved Lund jet plane</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2019&ndash;2020</div>
+        <div class="what">
+          <strong>MSc, Physics</strong> &middot; <span class="honours">Distinction</span><br>
+          <span class="org">Imperial College London</span>
+          <ul>
+            <li>Thesis: graph neural networks to classify particle hits in a liquid argon time
+            projection chamber, in collaboration with DUNE</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2016&ndash;2019</div>
+        <div class="what">
+          <strong>BSc, Physics</strong> &middot; <span class="honours">First Class</span><br>
+          <span class="org">University College London</span>
+          <ul>
+            <li>Group project: design and construction of a spark detector for cosmic-ray muons</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="when">2024&ndash;2025</div>
+        <div class="what">
+          <strong>AFP Detector On-Call Expert</strong><br>
+          <span class="org">ATLAS Experiment, CERN</span>
+          <ul>
+            <li>On call 24/7 for three periods (May 2024, August 2024 and April 2025), answering the
+            ATLAS control room whenever the ATLAS Forward Proton detector needed an expert during
+            data taking</li>
+            <li>Diagnosed and resolved detector and data problems under time pressure, while beam
+            time was running</li>
+            <li>Responsible for a live detector during collisions, where data lost to an unsolved
+            problem cannot be recovered</li>
+            <li>Prepared per-run entries for the AFP run records on the team's twiki</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2021&ndash;2022</div>
+        <div class="what">
+          <strong>Algorithm Engineer, Physics</strong><br>
+          <span class="org">Shanghai iRay Technology Limited, Shanghai</span>
+          <ul>
+            <li>Geometric calibration and verification for CT imaging systems (patent application)</li>
+            <li>Ring-artifact removal for large flat-panel X-ray detectors</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills-grid">
+        <dt>Languages</dt>
+        <dd>Python, C++, CUDA</dd>
+        <dt>ATLAS / HEP</dt>
+        <dd>Athena framework, trigger (HLT) development, flavour tagging, unfolding (OmniFold)</dd>
+        <dt>ML</dt>
+        <dd>PyTorch, torch_geometric, graph neural networks</dd>
+        <dt>Tools</dt>
+        <dd>LaTeX, Mathematica, Linux / HPC</dd>
+      </dl>
+    </section>
+
+  </div>
+</body>
+</html>
