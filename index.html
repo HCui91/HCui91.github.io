@@ -150,6 +150,24 @@
     font-size: 0.92rem;
   }
 
+  .repos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .repos li { margin-bottom: 0.9rem; }
+  .repos a { font-weight: 600; }
+  .repos .lang {
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    margin-left: 0.4rem;
+  }
+  .repos .desc {
+    display: block;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+  }
+
   @media (max-width: 560px) {
     .entry, .skills-grid { grid-template-columns: 1fr; }
     .entry .when { padding-top: 0; margin-bottom: 0.1rem; }
@@ -179,6 +197,8 @@
       <p class="tagline">PhD candidate in particle physics, ATLAS experiment at CERN</p>
       <div class="contact-line">
         <a href="mailto:hanfei.cui.16@ucl.ac.uk">hanfei.cui.16@ucl.ac.uk</a>
+        <span class="sep">&middot;</span>
+        <a href="https://github.com/HCui91">github.com/HCui91</a>
         <span class="sep">&middot;</span>
         University College London
         <span class="sep">&middot;</span>
@@ -397,6 +417,28 @@
           </ul>
         </div>
       </div>
+    </section>
+
+    <section id="side-projects">
+      <h2>Side projects</h2>
+      <ul class="repos">
+        <li>
+          <a href="https://github.com/HCui91/netthing-mqtt">netthing-mqtt</a><span class="lang">Python</span>
+          <span class="desc">Sends Netthing energy monitor readings to Home Assistant over MQTT.</span>
+        </li>
+        <li>
+          <a href="https://github.com/HCui91/pico_tfl_departure_board">pico_tfl_departure_board</a><span class="lang">MicroPython</span>
+          <span class="desc">London Underground departure board on a Raspberry Pi Pico W with a Waveshare display.</span>
+        </li>
+        <li>
+          <a href="https://github.com/HCui91/deepseek-balance-menubar">deepseek-balance-menubar</a><span class="lang">Swift</span>
+          <span class="desc">macOS menu bar app that shows your DeepSeek API credit balance.</span>
+        </li>
+        <li>
+          <a href="https://github.com/HCui91/vscode-pdf-dark">vscode-pdf-dark</a><span class="lang">TypeScript</span>
+          <span class="desc">VS Code PDF preview with dark themes.</span>
+        </li>
+      </ul>
     </section>
 
     <section id="skills">
